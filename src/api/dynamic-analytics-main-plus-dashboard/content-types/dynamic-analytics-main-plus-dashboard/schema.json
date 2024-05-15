@@ -15,127 +15,15 @@
     }
   },
   "attributes": {
-    "cardTitle": {
+    "dynamicAnalyticsMainPlusDashboard": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
-      "required": true
-    },
-    "cardSubtitle": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "authorImg": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
-    },
-    "authorDescription": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text",
-      "default": "Economist with master`s degree, Forex analyst, with more than 10 years of experience, participant of various international conferences on marketing and economics, author of more than 1000 analytical reviews and forecasts with an accuracy of up to 75%, author of scientific research on economics and marketing.",
-      "required": true
-    },
-    "cardImg": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
-    },
-    "tradePair": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "cardTypeSelect": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "enumeration",
-      "enum": [
-        "technical",
-        "fundamental",
-        "economic"
-      ],
-      "required": true
-    },
-    "authorOfAnalytics": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "enumeration",
-      "enum": [
-        "Stanislav Litinsky"
-      ],
-      "required": true,
-      "default": "Stanislav Litinsky"
-    },
-    "analyticsBlockText": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "blocks",
-      "required": true
-    },
-    "cardNameTabSelect": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "enumeration",
-      "enum": [
-        "Technical analysis",
-        "Fundamental analysis",
-        "Economic news"
-      ],
-      "required": true
-    },
-    "publishedDateAndTime": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "datetime",
-      "required": true
+      "component": "dynamic-analytics-main-plus-dashboard.dynamic-analytics-main-plus-dashboard"
     }
   }
 }

@@ -379,84 +379,10 @@ export interface ApiDynamicAnalyticsMainPlusDashboardDynamicAnalyticsMainPlusDas
     };
   };
   attributes: {
-    cardTitle: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    cardSubtitle: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    authorImg: Attribute.Media &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    authorDescription: Attribute.Text &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }> &
-      Attribute.DefaultTo<'Economist with master`s degree, Forex analyst, with more than 10 years of experience, participant of various international conferences on marketing and economics, author of more than 1000 analytical reviews and forecasts with an accuracy of up to 75%, author of scientific research on economics and marketing.'>;
-    cardImg: Attribute.Media &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    tradePair: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    cardTypeSelect: Attribute.Enumeration<
-      ['technical', 'fundamental', 'economic']
+    dynamicAnalyticsMainPlusDashboard: Attribute.Component<
+      'dynamic-analytics-main-plus-dashboard.dynamic-analytics-main-plus-dashboard',
+      true
     > &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    authorOfAnalytics: Attribute.Enumeration<['Stanislav Litinsky']> &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }> &
-      Attribute.DefaultTo<'Stanislav Litinsky'>;
-    analyticsBlockText: Attribute.Blocks &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    cardNameTabSelect: Attribute.Enumeration<
-      ['Technical analysis', 'Fundamental analysis', 'Economic news']
-    > &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    publishedDateAndTime: Attribute.DateTime &
-      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

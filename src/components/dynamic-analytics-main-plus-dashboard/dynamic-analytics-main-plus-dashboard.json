@@ -1,0 +1,82 @@
+{
+  "collectionName": "components_dynamic_analytics_main_plus_dashboard_dynamic_analytics_main_plus_dashboards",
+  "info": {
+    "displayName": "dynamicAnalyticsMainPlusDashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "cardSubtitle": {
+      "type": "string",
+      "required": true
+    },
+    "authorImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "authorDescription": {
+      "type": "text",
+      "default": "Economist with master`s degree, Forex analyst, with more than 10 years of experience, participant of various international conferences on marketing and economics, author of more than 1000 analytical reviews and forecasts with an accuracy of up to 75%, author of scientific research on economics and marketing.",
+      "required": true
+    },
+    "cardImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tradePair": {
+      "type": "enumeration",
+      "enum": [
+        "technical",
+        "fundamental",
+        "economic"
+      ],
+      "required": true
+    },
+    "cardTypeSelect": {
+      "type": "enumeration",
+      "enum": [
+        "technical",
+        "fundamental",
+        "economic"
+      ],
+      "required": true
+    },
+    "authorOfAnalytics": {
+      "type": "enumeration",
+      "enum": [
+        "Stanislav Litinsky"
+      ],
+      "required": true,
+      "default": "Stanislav Litinsky"
+    },
+    "cardNameTabSelect": {
+      "type": "enumeration",
+      "enum": [
+        "Technical analysis",
+        "Fundamental analysis",
+        "Economic news"
+      ],
+      "required": true
+    },
+    "publishedDateAndTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "analyticsBlockText": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
